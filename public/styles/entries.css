@@ -1,0 +1,144 @@
+/*-------------ENTRIES------------*/
+.background-gray {
+    position: fixed;
+    z-index: -9999;
+    width: 100%;
+    height: 100%;
+    background-color: #666666;
+}
+.entry-detail {
+    /*border: 1px solid black;*/
+    background-color: #E8E8E8;
+    /*background-color: white;*/
+    border-radius: 25px;
+    position: fixed;
+    top: 10%;
+    left: 18%;
+    width: 64%;
+    height: 22%;
+    text-align: center;
+}
+
+.entries-date {
+    font-size: 14px;
+}
+.entries-round {
+
+}
+.entries-race{
+    font-size: 28px;
+    top: 0px;
+}
+.entries-location {
+    color: #0A98F7;
+    font-size: 20px;
+}
+.entries-stadium {
+
+}
+.entries-amount {
+    color:  #0A98F7;
+    font-size: 18px;
+}
+
+.entries-in-contest {
+    /*background-color: white;*/
+    background-color: #E8E8E8;
+    border-radius: 25px;
+    position: fixed;
+    left: 18%;
+    width: 64%;
+    top: 35%;
+    height: 60%;
+    overflow-y: scroll;
+}
+.entries-repeat {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 130px;
+    border-bottom: 1px solid #666666;
+}
+.user-pho {
+    position: relative;
+    width: 90px;
+    height: 100%;
+    flex: 0.5;
+    text-align: center;
+}
+.user-photo {
+    position: relative;
+    top: 20px;
+    width: 90px;
+    height: 90px;
+    border-radius: 90px;
+}
+.user-displayName {
+    flex: 0.5;
+    position: relative;
+    top: 50px;
+    font-size: 25px;
+    text-align: center;
+}
+.user-twopick {
+    flex: 1;
+    text-align: center;
+    height: 100%;
+    width: 200px;
+
+}
+.user-fourpick {
+    flex: 1;
+    text-align: center;
+    height: 100%;
+    width: 200px;
+}
+.two-pick-pic {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    top: 10px;
+    right: 10px;
+}
+.two-pick-name {
+    position: relative;
+    top: 5px;
+    left: 25px;
+    font-size: 25px;
+}
+.two-pick-number {
+    position: relative;
+    left: 70px;
+    bottom: 70px;
+    font-size: 50px;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 900;
+}
+.four-pick-pic {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    top: 10px;
+    right: 10px;
+}
+.four-pick-name {
+    position: relative;
+    top: 5px;
+    left: 25px;
+    font-size: 25px;
+}
+.four-pick-number {
+    position: relative;
+    left: 70px;
+    bottom: 70px;
+    font-size: 50px;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 900;
+}
+.user-points {
+    position: relative;
+    flex: 0.5;
+    text-align: center;
+    font-size: 25px;
+    top: 50px;
+}

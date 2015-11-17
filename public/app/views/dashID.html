@@ -1,0 +1,93 @@
+<div class="background-gray">
+
+<log></log>
+
+<!--PICKS-->
+<!-- <div class="two-picks"> -->
+  <!-- <div class="picks-header">250 Riders</div> -->
+  <div ng-repeat="rider in picks_2" class="picks" ng-mouseenter="hover(rider)" ng-mouseleave="hover(rider)">
+    <div class="pick"></div>
+    <ul>
+        <li class='rider-name'>{{rider.name}}</li>
+        <li class='rider-number'>{{rider.number}}</li>
+        <li><button ng-show="rider.showDelete" class="delete" ng-click="delete_2($index)">X</button></li>
+    </ul>
+  </div>
+</div>
+
+<!-- <div class="four-picks"> -->
+  <div class="picks-header">450 Riders</div>
+  <div ng-repeat="rider in picks_4" class="picks" ng-mouseenter="hover(rider)" ng-mouseleave="hover(rider)">
+    <div class="pick"></div>
+    <ul>
+        <li class='rider-name'>{{rider.name}}</li>
+        <li class='rider-number'>{{rider.number}}</li>
+        <li><button ng-show="rider.showDelete" class="delete" ng-click="delete_4($index)">X</button></li>
+    </ul>
+  </div>
+</div>
+
+
+
+
+
+<!---PICKED RIDER----->
+<div class="fourfifty-class">450 Class</div>
+<div class="fourfifty-picked" ng-repeat="rider in fourArr"><span ng-show="$last">
+<div class="fake-name">{{rider.fake}}</div>
+<img class="fake-pic" src="{{rider.fake_pic}}"/>
+<div class="pick-name">{{rider.name}}</div>
+<div class="pick-number">{{rider.number}}</div>
+<img src="{{rider.pic}}" class="pick-pic">
+</span></div>
+
+<div class="twofifty-class">250 Class</div>
+<div class="twofifty-picked" ng-repeat="rider in twoArr"><span ng-show="$last">
+<div class="fake-name">{{rider.fake}}</div>
+<img class="fake-pic-two" src="{{rider.fake_pic}}"/>
+<div class="pick-name">{{rider.name}}</div>
+<div class="pick-number">{{rider.number}}</div>
+<img src="{{rider.pic}}" class="pick-pic-two">
+</span></div>
+
+<!--OPTIONAL RIDERS-->
+<div class="four-riders-pick">
+      <div class="rider-list" ng-repeat="rider in fourRiders">
+          <button class="add-button-pick" ng-click="pickRider(rider); pushRiderFour($index)"><div class="plus-sign">+</div></button>
+          <div class='rider-name-pick'>{{rider.name}}</div>
+          <div class='rider-number-pick'>{{rider.number}}</div>
+          <img class='rider-pic-pick' src='{{rider.pic}}'/>
+      </div>
+  </div>
+</div>
+<!-- -two fifty- -->
+<div class="two-riders-pick">
+      <div class="rider-list" ng-repeat="rider in twoRiders">
+          <button class="add-button-pick" ng-click="pickRiderTwo(rider); pushRider($index)"><div class="plus-sign">+</div></button>
+          <div class='rider-name-pick'>{{rider.name}}</div>
+          <div class='rider-number-pick'>{{rider.number}}</div>
+          <img class='rider-pic-pick' src='{{rider.pic}}'/>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+<form class="hidden-inputs" ng-repeat="bet in bets">
+  250 Rider:<br>
+  <input ng-model="two" name="two" type="text">
+  <br>
+  450 Rider:<br>
+  <input ng-model="four" name="four" type="text">
+  <br><br>
+
+  <!-- <a ui-sref="dashEntries"> -->
+  <!-- <a ng-href="#/dash/{{bet._id}}/entries"> -->
+    <input class="submit-button-picks" type="submit" value="Submit" ng-click="submit(facebook._id, four._id, two._id); toDash()">
+    <!--  -->
+
+</form>
+
+</div>

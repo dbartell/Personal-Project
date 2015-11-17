@@ -1,0 +1,35 @@
+<div class="background-gray">
+
+    <log></log>
+
+    <!-- - SORTER DASH - -->
+    <div class="sort-box"></div>
+
+    <!-- LOWER DASH -->
+    <div class="moto-bets">Dashboard</div>
+    <div class="repeat-header">
+      <ul class="title-bar">
+        <li class="title-bar-1">Round</li>
+        <li class="title-bar-2">Series</li>
+        <li class="title-bar-3">Location</li>
+        <li class="title-bar-4">Stadium / Track</li>
+        <li class="title-bar-5">Date</li>
+        <li class="title-bar-6">Enter</li>
+      </ul>
+    </div>
+
+    <div class="top-selector">
+      <div class="bet-repeat" ng-repeat="bet in bets | filter: category | orderBy: 'Round'" ng-class-odd="'oddDash'" ng-class-even="'evenDash'" >
+        <span class="bet-round" ui-sref="dashEntries({contestID : bet._id})">{{bet.round}}</span>
+        <span class="bet-race" ui-sref="dashEntries({contestID : bet._id})">{{bet.race}}</span>
+        <span class="bet-location" ui-sref="dashEntries({contestID : bet._id})">{{bet.location}}</span>
+        <span class="bet-stadium" ui-sref="dashEntries({contestID : bet._id})">{{bet.stadium}}</span>
+        <span class="bet-date" ui-sref="dashEntries({contestID : bet._id})">{{bet.date}}</span>
+        <span class="bet-button">
+            <button class="button-small --blue">
+                <a ui-sref="dashDetail({ contestID : bet._id })">Enter</a>
+            </button>
+        </span>
+      </div>
+    </div>
+</div>

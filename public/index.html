@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" href="http://www.workspacesystems.co.uk/sites/default/files/styles/thumbnail/public/crops/193-glyphicons_328_podium@2x.png?itok=q7ARx7wv">
+    <title>Moto Bets</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Exo+2:400,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/dash.css">
+    <link rel="stylesheet" href="styles/dashID.css">
+    <link rel="stylesheet" href="styles/entries.css">
+    <link rel="stylesheet" href="styles/buttons.css">
+    <link rel="stylesheet" href="styles/media.css">
+  </head>
+  <body ng-app="motoBetsApp">
+
+    <div id="header">
+      <div class="logo">
+          <a href="http://localhost:9000/#/landing">Moto Bets
+          <img class="glyphicon" src="images/glyphicon.png"/>
+          </a>
+    </div>
+    </div>
+
+    <ui-view></ui-view>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/controllers/dashboardCtrl.js"></script>
+    <script src="app/controllers/contestCtrl.js"></script>
+    <script src="app/controllers/userCtrl.js"></script>
+    <script src="app/controllers/entriesCtrl.js"></script>
+    <script src="app/services/service.js"></script>
+    <script src="app/directives/directive.js"></script>
+  </body>
+</html>

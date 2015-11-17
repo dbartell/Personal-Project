@@ -1,0 +1,52 @@
+.button {
+  border: 0 none;
+  border-radius: 36px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-family: 'RobotoSlab', serif;
+  font-weight: 700;
+  padding: 12px 45px;
+  text-transform: none;
+  -webkit-transition: all 100ms ease-in-out;
+          transition: all 100ms ease-in-out;
+  width: auto;
+  /* auto */
+  text-align: center;
+  /* DELETE WHEN WIDTH AUTO */
+}
+
+.button:hover {
+  opacity: .2;
+}
+.button.--blue {
+  background: #0A98F7;
+  color: #FFFFFF;
+}
+.button-small.--blue {
+  background: #0A98F7;
+  color: #FFFFFF;
+}
+.button-small.--dark {
+  background: #666666;
+  color: #FFFFFF;
+}
+
+.button-small {
+    border: 0 none;
+    border-radius: 36px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-family: 'RobotoSlab', serif;
+    font-weight: 700;
+    text-transform: none;
+    -webkit-transition: all 100ms ease-in-out;
+            transition: all 100ms ease-in-out;
+    width: auto;
+    /* auto */
+    text-align: center;
+    /* DELETE WHEN WIDTH AUTO */
+}

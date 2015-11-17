@@ -1,0 +1,33 @@
+<div class="background-gray">
+
+    <log scopedata="user"></log>
+
+    <div class="entry-detail" ng-model="contest">
+        <div class="entries-race">{{contest.race}}</div>
+        <div class="entries-date">{{contest.date}}</div>
+        <div class="entries-location">{{contest.location}}</div>
+        <div class="entries-stadium">{{contest.stadium}}</div>
+        <div class="entries-round">Round: {{contest.round}}</div>
+        <div class="entries-amount-1"># of Entries: {{contest.users.length}}
+            <div class="entries-amount"></div>
+        </div>
+
+    </div>
+        <div class="entries-in-contest">
+            <div class="entries-repeat" ng-repeat='entry in userEntries'>
+                <img src=""/>
+                <div class="user-pho"><img class="user-photo" src="{{entry.user.photo}}"/></div>
+                <div class="user-displayName">{{entry.user.displayName}}</div>
+                <div class="user-twopick">
+                    <div class="two-pick-name">{{entry.twopick.name}}</div>
+                    <img class="two-pick-pic" src="{{entry.twopick.pic}}"/>
+                    <div class="two-pick-number">{{entry.twopick.number}}</div>
+                </div>
+                <div class="user-fourpick">
+                    <div class="four-pick-name">{{entry.fourpick.name}}</div>
+                    <img class="four-pick-pic" src="{{entry.fourpick.pic}}"/>
+                    <div class="four-pick-number">{{entry.fourpick.number}}</div>
+                </div>
+        </div>
+    </div>
+</div>

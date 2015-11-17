@@ -1,0 +1,114 @@
+/*______DIRECTIVE_______*/
+.log {
+    position: fixed;
+    right: 0px;
+    top: -10px;
+    width: 200px;
+    height: 100px;
+}
+.dashboard-button {
+    position: relative;
+    top: -7px;
+    left: -10px;
+    z-index: 999;
+ }
+ .log-out {
+     position: relative;
+     top: -7px;
+     left: -10px;
+ }
+ .facebook-pic {
+     position: relative;
+     top: 10px;
+     left: 0px;
+     width: 45px;
+     height: 45px;
+     border-radius: 45px;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sort-box {
+  position: absolute;
+  width: 80%; height: 80px;
+  left: 10%; top: 50px;
+  border: 3px solid black;
+  background-color: white;
+}
+
+.series {left: 2px; top: 2px; position: relative;}
+
+.moto-bets{
+  font-size: 20px;
+  position: relative;
+  top: 60px;
+  left: 11%;
+}
+
+.repeat-header {
+  position: relative;
+  top: 80px;
+  height: 20px;
+  color: white;
+  background-color: #0A98F7;
+  width: 80%;
+  left: 10%;
+  padding-left: 4px;
+}
+
+.title-bar {
+  width: 100%;
+  position: relative;
+  left: 0%;
+  display: flex;
+  list-style: none;
+  padding-left: 0em;
+}
+
+.title-bar li {
+  width: 150px;
+}
+
+.top-selector {
+  position: relative;
+  width: 80%;
+  height: 68%;
+  background-color: gray;
+  left: 10%;
+  top: 80px;
+  border: 3px solid black;
+  border-top: 1px solid black;
+  overflow: scroll;
+  margin-bottom: 200px;
+}
+
+/*----- NG REPEAT CSS -----*/
+.repeat {
+    height: 55px;
+}
+
+.oddDash {
+  background-color: white;
+}
+
+.evenDash {
+  background-color: #e6e6e6;
+}
+
+.bet-repeat {display: flex; height: 50px;}
+.bet-round {flex: 1; top: 15px; left: 5px; position: relative;}
+.bet-race {flex: 2; top: 15px;left: 10px; position: relative;}
+.bet-location {flex: 1; top: 15px; position: relative;}
+.bet-stadium {flex: 2;  left: 10px; top: 15px; position: relative;}
+.bet-date {flex: 1.25; left: 0px; top: 15px; position: relative; text-align: left}
+.bet-button {flex: 0.5; top: 15px; position: relative;}

@@ -1,0 +1,33 @@
+<div class="background-gray">
+
+<log></log>
+
+<div class="user">
+  <img class="user-pic" ng-src={{facebook.photo}}>
+</div>
+
+<!-- UPPER DASH -->
+<div class="my-entries">My Entries</div>
+
+<div class="upper-repeat-header">
+  <ul class="upper-title-bar">
+    <li class="title-entries-round">Round</li>
+    <li class="title-entries-races">Race</li>
+    <li class="title-entries-stadium">Stadium/ Track</li>
+    <li class="title-entries-twofifty">250 Class</li>
+    <li class="title-entries-fourfifty">450 Class</li>
+  </ul>
+</div>
+
+<div class="entries">
+ <div class="repeat" ng-repeat="entry in entriesByUser" ng-class-odd="'oddDash'" ng-class-even="'evenDash'">
+   <div class="upper-title-bar">
+     <span class="entries-round-1">{{entry.round}}</span>
+     <span class="entries-races">{{entry.location}}</span>
+     <span class="entries-stadium-1">{{entry.stadium}}</span>
+     <span class="entries-twofifty">{{entry.users[0].twopick.name}}</span>
+     <span class="entries-fourfifty">{{entry.users[0].fourpick.name}}</span>
+   </div>
+ </div>
+</div>
+</div>
