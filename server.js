@@ -19,7 +19,7 @@ var app = express();
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json());
 app.use(cors());
-app.use(session({secret: gitignore.secret}));
+app.use(session({secret: process.env.SECRET}));
 app.use(passport.initialize());
 app.use(passport.session());
 
@@ -47,8 +47,8 @@ app.get('/contests', ContestsController.read);
 app.post('/contests', ContestsController.create);
 
 passport.use(new Facebook({
-  clientID: gitignore.clientID,
-  clientSecret: gitignore.clientSecret,
+  clientID: process.env.clientID,
+  clientSecret: process.env.clientSecret,
   callbackURL: '/auth/facebook/callback',
   profileFields : ['id', 'displayName', 'emails', 'photos']
 },function(request, accessToken, refreshToken, profile, done) {
@@ -101,8 +101,8 @@ passport.deserializeUser(function(obj, done) {
   done(null, obj);
 });
 
-var port = gitignore.PORT;
-var mongoURI = gitignore.MONGO_URI;
+var port = process.env.PORT;
+var mongoURI = process.env.MONGO_URI;
 
 mongoose.connect(mongoURI);
 mongoose.connection.once('open', function() {
