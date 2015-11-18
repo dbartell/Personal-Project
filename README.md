@@ -1,7 +1,9 @@
 # MOTO BETS
-###General Info
 
 Live @ http://moto-bets.herokuapp.com/
+
+###General Info
+
 -------------------------------------------
 MOTO BETS is a fantasy motocross app made for AMA Supercross and Motocross Series fans.
 
